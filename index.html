@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Madesh R | Linux System Administrator · RHCE Certified</title>
+  <meta name="description" content="Portfolio of Madesh R — RHCE Certified Linux System Administrator with 3+ years of expertise in AWS, Networking, Ansible Automation, and Cyber Security. Open to Cloud, DevOps & NOC roles.">
+  <meta property="og:title" content="Madesh R | Linux System Administrator">
+  <meta property="og:description" content="RHCE Certified Linux System Administrator — AWS · Ansible · Networking · Cyber Security">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- ─── CANVAS & BG ─── -->
+  <canvas id="particle-canvas"></canvas>
+  <div class="bg-grid"></div>
+  <div class="noise-overlay"></div>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+
+  <!-- ─── NAVBAR ─── -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="logo">
+        <span class="logo-bracket">[</span>Madesh<span class="logo-accent">.R</span><span class="logo-bracket">]</span>
+      </a>
+      <div class="nav-links" id="nav-links">
+        <a href="#about"        class="nav-link">About</a>
+        <a href="#skills"       class="nav-link">Skills</a>
+        <a href="#experience"   class="nav-link">Experience</a>
+        <a href="#projects"     class="nav-link">Projects</a>
+        <a href="#certifications" class="nav-link">Certs</a>
+        <a href="#contact"      class="nav-link">Contact</a>
+        <a href="resume.pdf.pdf" class="btn-nav-resume" download id="nav-resume-btn">
+          <i data-lucide="download" class="btn-icon"></i> Resume
+        </a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ─── MOBILE MENU ─── -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#about"          class="mobile-link">About</a>
+    <a href="#skills"         class="mobile-link">Skills</a>
+    <a href="#experience"     class="mobile-link">Experience</a>
+    <a href="#projects"       class="mobile-link">Projects</a>
+    <a href="#certifications" class="mobile-link">Certifications</a>
+    <a href="#contact"        class="mobile-link">Contact</a>
+    <a href="resume.pdf.pdf"  class="mobile-link resume-mobile" download>⬇ Download Resume</a>
+  </div>
+
+  <main>
+
+    <!-- ══════════════════════════════════════════
+         HERO
+    ══════════════════════════════════════════ -->
+    <section id="hero" class="hero">
+
+      <div class="hero-grid">
+
+        <!-- LEFT: Profile Photo -->
+        <div class="hero-photo-col" data-reveal>
+          <div class="photo-frame">
+            <div class="photo-glow-ring"></div>
+            <div class="photo-border-ring"></div>
+            <img
+              src="profile.jpg.png"
+              alt="Madesh R — Linux System Administrator"
+              class="profile-img"
+              id="profile-img"
+              onerror="this.src='https://ui-avatars.com/api/?name=Madesh+R&size=300&background=7c3aed&color=ffffff&bold=true&font-size=0.4'"
+            >
+            <div class="photo-status">
+              <span class="status-dot"></span>
+              <span class="status-text">Open to Work</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT: Text Content -->
+        <div class="hero-text-col" data-reveal>
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            RHCE Certified &nbsp;·&nbsp; 3+ Years Experience
+          </div>
+
+          <h1 class="hero-name">
+            <span class="name-line-1">Madesh</span>
+            <span class="name-line-2">R</span>
+          </h1>
+
+          <div class="hero-role-wrapper">
+            <span class="role-prefix">$ </span>
+            <span class="hero-role" id="typing-role"></span>
+            <span class="role-cursor">|</span>
+          </div>
+
+          <p class="hero-tagline">
+            Building <span class="glow-word">scalable</span>,
+            <span class="glow-word">secure</span>, and
+            <span class="glow-word">reliable</span> systems
+          </p>
+
+          <div class="hero-cta">
+            <a href="resume.pdf.pdf" class="btn-primary" download id="hero-resume-btn">
+              <i data-lucide="download" class="btn-icon"></i>
+              Download Resume
+            </a>
+            <a href="#contact" class="btn-outline">
+              <i data-lucide="send" class="btn-icon"></i>
+              Contact Me
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number">3+</span>
+              <span class="stat-label">Years Exp</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">10+</span>
+              <span class="stat-label">Servers Managed</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">5</span>
+              <span class="stat-label">Certifications</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Terminal -->
+      <div class="terminal-container" data-reveal>
+        <div class="terminal-card">
+          <div class="terminal-titlebar">
+            <div class="t-dots">
+              <span class="t-dot t-close"></span>
+              <span class="t-dot t-min"></span>
+              <span class="t-dot t-max"></span>
+            </div>
+            <span class="t-title">bash — madesh@portfolio:~</span>
+            <span class="t-badge">zsh</span>
+          </div>
+          <div class="terminal-body" id="terminal-body">
+            <!-- JS populates this -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <div class="scroll-indicator">
+        <div class="scroll-line"></div>
+        <span>scroll</span>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         ABOUT
+    ══════════════════════════════════════════ -->
+    <section id="about" class="section">
+      <div class="section-header" data-reveal>
+        <span class="section-number">01.</span>
+        <h2 class="section-title">About Me</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-card glass-card" data-reveal>
+        <div class="about-icon-col">
+          <div class="about-icon-wrap">
+            <i data-lucide="user" class="about-icon"></i>
+          </div>
+        </div>
+        <div class="about-text-col">
+          <p class="about-text">
+            Linux System Administrator with <strong>3+ years</strong> of hands-on experience managing, monitoring, and troubleshooting production Linux environments. Strong expertise in system performance optimization, incident management, and infrastructure support.
+          </p>
+          <p class="about-text">
+            Skilled in automation using <span class="inline-accent">Ansible</span> and well-versed in networking fundamentals. Hands-on experience with AWS services (<span class="inline-accent">EC2, IAM, VPC</span>), focused on building scalable, secure, and highly reliable systems.
+          </p>
+          <div class="about-tags">
+            <span class="about-tag"><i data-lucide="shield-check" class="tag-icon"></i> RHCE Certified</span>
+            <span class="about-tag"><i data-lucide="cloud" class="tag-icon"></i> AWS Cloud</span>
+            <span class="about-tag"><i data-lucide="terminal" class="tag-icon"></i> DevOps Enthusiast</span>
+            <span class="about-tag"><i data-lucide="shield" class="tag-icon"></i> Cyber Security</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         SKILLS
+    ══════════════════════════════════════════ -->
+    <section id="skills" class="section">
+      <div class="section-header" data-reveal>
+        <span class="section-number">02.</span>
+        <h2 class="section-title">Skills &amp; Expertise</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-card glass-card" data-reveal>
+          <div class="skill-card-icon"><i data-lucide="terminal-square"></i></div>
+          <h3 class="skill-card-title">Linux Administration</h3>
+          <div class="skill-tags">
+            <span class="stag">RHEL</span>
+            <span class="stag">Ubuntu</span>
+            <span class="stag">LVM</span>
+            <span class="stag">SELinux</span>
+            <span class="stag">Systemd</span>
+          </div>
+        </div>
+
+        <div class="skill-card glass-card" data-reveal>
+          <div class="skill-card-icon"><i data-lucide="network"></i></div>
+          <h3 class="skill-card-title">Networking</h3>
+          <div class="skill-tags">
+            <span class="stag">TCP/IP</span>
+            <span class="stag">DNS</span>
+            <span class="stag">DHCP</span>
+            <span class="stag">Firewall</span>
+            <span class="stag">SSH</span>
+          </div>
+        </div>
+
+        <div class="skill-card glass-card" data-reveal>
+          <div class="skill-card-icon"><i data-lucide="cloud"></i></div>
+          <h3 class="skill-card-title">Cloud — AWS</h3>
+          <div class="skill-tags">
+            <span class="stag">EC2</span>
+            <span class="stag">IAM</span>
+            <span class="stag">VPC</span>
+            <span class="stag">S3</span>
+          </div>
+        </div>
+
+        <div class="skill-card glass-card" data-reveal>
+          <div class="skill-card-icon"><i data-lucide="cpu"></i></div>
+          <h3 class="skill-card-title">Automation</h3>
+          <div class="skill-tags">
+            <span class="stag">Ansible</span>
+            <span class="stag">Bash</span>
+            <span class="stag">Cron Jobs</span>
+          </div>
+        </div>
+
+        <div class="skill-card glass-card" data-reveal>
+          <div class="skill-card-icon"><i data-lucide="shield"></i></div>
+          <h3 class="skill-card-title">Cyber Security</h3>
+          <div class="skill-tags">
+            <span class="stag">SELinux</span>
+            <span class="stag">Firewalld</span>
+            <span class="stag">Hardening</span>
+          </div>
+        </div>
+
+        <div class="skill-card glass-card" data-reveal>
+          <div class="skill-card-icon"><i data-lucide="wrench"></i></div>
+          <h3 class="skill-card-title">Tools</h3>
+          <div class="skill-tags">
+            <span class="stag">Git</span>
+            <span class="stag">JIRA</span>
+            <span class="stag">ServiceNow</span>
+            <span class="stag">Python</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         EXPERIENCE
+    ══════════════════════════════════════════ -->
+    <section id="experience" class="section">
+      <div class="section-header" data-reveal>
+        <span class="section-number">03.</span>
+        <h2 class="section-title">Experience</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="timeline">
+        <div class="timeline-track"></div>
+        <div class="timeline-item" data-reveal>
+          <div class="tl-dot"><div class="tl-dot-inner"></div></div>
+          <div class="tl-card glass-card">
+            <div class="tl-header">
+              <div class="tl-title-col">
+                <h3 class="tl-job-title">Linux System Administrator</h3>
+                <span class="tl-company">
+                  <i data-lucide="building-2" class="tl-company-icon"></i>
+                  Winways Complete Open Source Pvt Ltd
+                </span>
+              </div>
+              <div class="tl-badge-col">
+                <span class="tl-duration">Apr 2023 – May 2026</span>
+                <span class="tl-current">Current</span>
+              </div>
+            </div>
+            <ul class="tl-list">
+              <li>Managed <strong>10+ Linux servers</strong> ensuring high availability and uptime</li>
+              <li>Monitored logs, alerts, and system performance proactively</li>
+              <li>Troubleshot system and network issues across production environments</li>
+              <li>Automated administrative tasks using <strong>Ansible</strong> playbooks</li>
+              <li>Configured DNS, DHCP, SSH, and firewall rules</li>
+              <li>Implemented security practices — SELinux policies and firewall hardening</li>
+              <li>Managed tickets and escalation processes via JIRA and ServiceNow</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         PROJECTS
+    ══════════════════════════════════════════ -->
+    <section id="projects" class="section">
+      <div class="section-header" data-reveal>
+        <span class="section-number">04.</span>
+        <h2 class="section-title">Projects</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card glass-card" data-reveal>
+          <div class="project-card-top">
+            <div class="project-icon-wrap"><i data-lucide="cpu" class="project-icon"></i></div>
+            <i data-lucide="external-link" class="proj-link-icon"></i>
+          </div>
+          <h3 class="project-title">Infrastructure Automation using Ansible</h3>
+          <p class="project-desc">Automated server provisioning and configuration management across 10+ Linux servers using Ansible playbooks, reducing manual effort and configuration drift.</p>
+          <div class="project-tech">
+            <span class="tech-tag">Ansible</span>
+            <span class="tech-tag">RHEL</span>
+            <span class="tech-tag">Bash</span>
+          </div>
+        </div>
+
+        <div class="project-card glass-card" data-reveal>
+          <div class="project-card-top">
+            <div class="project-icon-wrap"><i data-lucide="server" class="project-icon"></i></div>
+            <i data-lucide="external-link" class="proj-link-icon"></i>
+          </div>
+          <h3 class="project-title">Linux Server Administration</h3>
+          <p class="project-desc">End-to-end management of production Linux servers — system monitoring, performance tuning, log analysis, and incident resolution for high-availability environments.</p>
+          <div class="project-tech">
+            <span class="tech-tag">Linux</span>
+            <span class="tech-tag">Systemd</span>
+            <span class="tech-tag">Monitoring</span>
+          </div>
+        </div>
+
+        <div class="project-card glass-card" data-reveal>
+          <div class="project-card-top">
+            <div class="project-icon-wrap"><i data-lucide="shield-check" class="project-icon"></i></div>
+            <i data-lucide="external-link" class="proj-link-icon"></i>
+          </div>
+          <h3 class="project-title">Secure Server Hardening</h3>
+          <p class="project-desc">Implemented CIS-aligned security hardening on Linux servers — SELinux enforcement, firewall configuration, SSH lockdown, and audit logging for compliance.</p>
+          <div class="project-tech">
+            <span class="tech-tag">SELinux</span>
+            <span class="tech-tag">Firewalld</span>
+            <span class="tech-tag">SSH</span>
+          </div>
+        </div>
+
+        <div class="project-card glass-card" data-reveal>
+          <div class="project-card-top">
+            <div class="project-icon-wrap"><i data-lucide="cloud" class="project-icon"></i></div>
+            <i data-lucide="external-link" class="proj-link-icon"></i>
+          </div>
+          <h3 class="project-title">AWS EC2 Deployment</h3>
+          <p class="project-desc">Deployed and managed cloud infrastructure on AWS — EC2 instances, IAM roles, VPC networking, and security groups for scalable and secure cloud workloads.</p>
+          <div class="project-tech">
+            <span class="tech-tag">AWS EC2</span>
+            <span class="tech-tag">IAM</span>
+            <span class="tech-tag">VPC</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         CERTS + EDUCATION (two-col)
+    ══════════════════════════════════════════ -->
+    <div class="two-col-section">
+
+      <!-- Certifications -->
+      <section id="certifications" class="section flex-section">
+        <div class="section-header" data-reveal>
+          <span class="section-number">05.</span>
+          <h2 class="section-title">Certifications</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="cert-list glass-card" data-reveal>
+          <div class="cert-item">
+            <div class="cert-icon"><i data-lucide="award"></i></div>
+            <div>
+              <div class="cert-name">RHCE</div>
+              <div class="cert-issuer">Red Hat Certified Engineer</div>
+            </div>
+          </div>
+          <div class="cert-item">
+            <div class="cert-icon"><i data-lucide="award"></i></div>
+            <div>
+              <div class="cert-name">RHCSA</div>
+              <div class="cert-issuer">Red Hat Certified System Administrator</div>
+            </div>
+          </div>
+          <div class="cert-item">
+            <div class="cert-icon"><i data-lucide="shield"></i></div>
+            <div>
+              <div class="cert-name">Deloitte Cyber Simulation</div>
+              <div class="cert-issuer">Forage Virtual Experience</div>
+            </div>
+          </div>
+          <div class="cert-item">
+            <div class="cert-icon"><i data-lucide="shield"></i></div>
+            <div>
+              <div class="cert-name">Cyber Security Masterclass</div>
+              <div class="cert-issuer">NoviTech</div>
+            </div>
+          </div>
+          <div class="cert-item">
+            <div class="cert-icon"><i data-lucide="code"></i></div>
+            <div>
+              <div class="cert-name">Python Internship</div>
+              <div class="cert-issuer">YBI Foundation</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section id="education" class="section flex-section">
+        <div class="section-header" data-reveal>
+          <span class="section-number">06.</span>
+          <h2 class="section-title">Education</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="edu-card glass-card" data-reveal>
+          <div class="edu-header">
+            <div class="edu-icon"><i data-lucide="graduation-cap"></i></div>
+            <div>
+              <h3 class="edu-college">The American College, Madurai</h3>
+              <span class="edu-location"><i data-lucide="map-pin" class="edu-loc-icon"></i>Madurai, Tamil Nadu</span>
+            </div>
+          </div>
+          <div class="edu-degrees">
+            <div class="edu-degree-item">
+              <span class="degree-badge">B.Voc</span>
+              <div>
+                <div class="degree-name">Data Science</div>
+                <div class="degree-cgpa">CGPA: <strong>7.4</strong></div>
+              </div>
+            </div>
+            <div class="edu-degree-item">
+              <span class="degree-badge">B.Sc</span>
+              <div>
+                <div class="degree-name">Computer Science</div>
+                <div class="degree-cgpa">CGPA: <strong>7.2</strong></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- ══════════════════════════════════════════
+         CONTACT
+    ══════════════════════════════════════════ -->
+    <section id="contact" class="section">
+      <div class="section-header" data-reveal>
+        <span class="section-number">07.</span>
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="contact-wrapper">
+        <div class="contact-intro" data-reveal>
+          <p>I'm currently open to <span class="inline-accent">Cloud</span>, <span class="inline-accent">DevOps</span>, and <span class="inline-accent">NOC</span> opportunities. Feel free to reach out!</p>
+        </div>
+        <div class="contact-grid">
+
+          <a href="mailto:madeshravi2001@gmail.com" class="contact-card glass-card" data-reveal>
+            <div class="contact-icon"><i data-lucide="mail"></i></div>
+            <div class="contact-info">
+              <span class="contact-label">Email</span>
+              <span class="contact-value">madeshravi2001@gmail.com</span>
+            </div>
+          </a>
+
+          <a href="tel:+919894035721" class="contact-card glass-card" data-reveal>
+            <div class="contact-icon"><i data-lucide="phone"></i></div>
+            <div class="contact-info">
+              <span class="contact-label">Phone</span>
+              <span class="contact-value">+91 9894035721</span>
+            </div>
+          </a>
+
+          <div class="contact-card glass-card" data-reveal>
+            <div class="contact-icon"><i data-lucide="map-pin"></i></div>
+            <div class="contact-info">
+              <span class="contact-label">Location</span>
+              <span class="contact-value">Madurai, India</span>
+            </div>
+          </div>
+
+          <a href="https://www.linkedin.com/in/madesh-r-60b810234/" target="_blank" rel="noopener noreferrer" class="contact-card glass-card" data-reveal>
+            <div class="contact-icon"><i data-lucide="linkedin"></i></div>
+            <div class="contact-info">
+              <span class="contact-label">LinkedIn</span>
+              <span class="contact-value">madesh-r-60b810234</span>
+            </div>
+          </a>
+
+          <a href="https://github.com/MADESH-R" target="_blank" rel="noopener noreferrer" class="contact-card glass-card" data-reveal>
+            <div class="contact-icon"><i data-lucide="github"></i></div>
+            <div class="contact-info">
+              <span class="contact-label">GitHub</span>
+              <span class="contact-value">MADESH-R</span>
+            </div>
+          </a>
+
+        </div>
+        <div class="contact-cta" data-reveal>
+          <a href="resume.pdf.pdf" class="btn-primary btn-large" download id="contact-resume-btn">
+            <i data-lucide="download" class="btn-icon"></i>
+            Download Resume
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ─── FOOTER ─── -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-logo">Madesh<span class="logo-accent">.R</span></span>
+      <span class="footer-copy">© 2026 · Designed &amp; Built with passion</span>
+      <div class="footer-socials">
+        <a href="https://github.com/MADESH-R" target="_blank" rel="noopener noreferrer" class="footer-social" aria-label="GitHub">
+          <i data-lucide="github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/madesh-r-60b810234/" target="_blank" rel="noopener noreferrer" class="footer-social" aria-label="LinkedIn">
+          <i data-lucide="linkedin"></i>
+        </a>
+        <a href="mailto:madeshravi2001@gmail.com" class="footer-social" aria-label="Email">
+          <i data-lucide="mail"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
